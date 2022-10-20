@@ -1,0 +1,39 @@
+training_len: 10
+experiment_len: 200
+stimulus_1: ["A", "B"]
+stimulus_2: ["X", "Y"]
+target_pair: ["A", "X"]
+
+
+screen_color: grey
+text_color: black
+text_size: 28
+
+# stimulus
+stimulus_pos: [0, 0]
+stimulus_size: 56
+stimulus_color: black
+answer_time: 1
+
+
+# fixation point
+fixation_size: 56
+fixation_color: black
+fixation_text: +
+fixation_time: 0.5
+
+# feedback
+fdbk_training: True
+fdbk_experiment: False
+fdbk_correct: Poprawna odpowiedź
+fdbk_incorrect: Błędna odpowiedź
+fdbk_no_answer: Brak odpowiedzi
+fdbk_show_time: 2
+fdbk_color: black
+fdbk_size: 56
+
+# wait
+wait_time: 0
+wait_jitter: 0
+
+reaction_keys: ["space"]
