@@ -25,17 +25,18 @@ def save_beh_results():
 
 
 def show_stim(stim, stim_time, clock, win):
-    if stim is not None:
-        stim.setAutoDraw(True)
-    win.callOnFlip(clock.reset)
-    win.callOnFlip(event.clearEvents)
-    win.flip()
-    while clock.getTime() < stim_time:
-        check_exit()
+    if stim_time > 0:
+        if stim is not None:
+            stim.setAutoDraw(True)
+        win.callOnFlip(clock.reset)
+        win.callOnFlip(event.clearEvents)
         win.flip()
-    if stim is not None:
-        stim.setAutoDraw(False)
-    win.flip()
+        while clock.getTime() < stim_time:
+            check_exit()
+            win.flip()
+        if stim is not None:
+            stim.setAutoDraw(False)
+        win.flip()
 
 
 def block(config, stimulus_list, block_type, win, fixation, clock, screen_res, feedback):

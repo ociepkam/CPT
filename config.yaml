@@ -20,20 +20,20 @@ answer_time: 1
 fixation_size: 56
 fixation_color: black
 fixation_text: +
-fixation_time: 0.5
+fixation_time: 0
 
 # feedback
-fdbk_training: True
+fdbk_training: False
 fdbk_experiment: False
 fdbk_correct: Poprawna odpowiedź
 fdbk_incorrect: Błędna odpowiedź
 fdbk_no_answer: Brak odpowiedzi
 fdbk_show_time: 2
 fdbk_color: black
-fdbk_size: 56
+fdbk_size: 30
 
 # wait
-wait_time: 0
+wait_time: 0.25
 wait_jitter: 0
 
 reaction_keys: ["space"]
